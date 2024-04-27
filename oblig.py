@@ -17,8 +17,7 @@ punkter = 100
 #Tiden simulasjonen skal vare [s]
 tid = 10
 
-#Starttemperatur for platen: [C]
-T_start = 30
+
 
 
 
@@ -34,7 +33,7 @@ dt =  min(dy**2 / (4 * a)  ,  dx**2 / (4 * a))
 tidspunkt = int(tid/dt)
 
 
-u=np.zeros((punkter,punkter)) + T_start 
+u=np.zeros((punkter,punkter)) 
 
 #Startkondisjon basert på ligningen T_xy = x + 100*sin(y):
 
